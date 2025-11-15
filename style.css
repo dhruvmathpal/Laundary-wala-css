@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: poppins, Arial, Helvetica, sans-serif;
+overflow: hidden;
+}
+nav{
+    margin: 0.2%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.menu{
+    width: 100px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    list-style: none;
+    gap: 5vw;
+    font-weight: 600;
+    
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+
+.logo{ 
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;}
+
+.profile{
+    width: 120px;
+    background-color: rgb(217, 252, 240);
+    border-radius: 10px;
+}
+.hero{
+     height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 0 5vw;
+     box-sizing: border-box;
+}
+.hero-left h1{
+ font-size: 2.5vw;
+    font-weight: 700;
+    line-height: 1.3;
+    
+}
+.hero-left h1 span {
+     font-size: 2vw;
+    color: #007bff;
+}
+.hero-left p{
+     
+margin-top: 1.5vh;
+width: 80%;
+    line-height: normal;
+    font-size: 1vw;
+}
+.cta-btn{
+    
+    background-color: #007bff;
+color: white;
+    height: 6vh;
+    width: 15vw;
+    margin-top: 3vh;
+    padding: 0.2vw 1vw;
+    text-align: center;
+    font-size: 1.2vw;
+
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+
+.hero-right img{
+    width: 50vw;
+}
+
+@media(max-width: 768px) {
+
+    .profile {
+        display: none; /* hide profile in small screens */
+    }
+
+    .menu {
+        display: none; /* hide main menu */
+    }
+
+
+    /* HERO BECOMES ONE COLUMN */
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+.hero-right{
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+    .hero-left {
+        order: 2;
+        align-content: start;
+        width: 100%;
+    }
+
+    .hero-left h1 {
+        font-size: 6vw;
+    }
+
+    .hero-left p {
+        font-size: 3.5vw;
+        width: 100%;
+    }
+
+    .cta-btn {
+        font-size: 3.5vw;
+        padding: 10px 20px;
+    }
+
+    .hero-right img {
+        width: 60vw;
+        margin-bottom: 20px;
+    }
+}
+
+/* 💻 Extra small screens (phones < 480px ) */
+@media(max-width: 480px) {
+
+    .hero-left h1 {
+        font-size: 7vw;
+    }
+
+    .hero-left p {
+        font-size: 4vw;
+    }
+
+    .cta-btn {
+        font-size: 4vw;
+    }
+
+    .hero-right img {
+        width: 70vw;
+    }
+}
