@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <div class="logo"> LOGO </div>
         <ul class="menu">
-        <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
+        <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
          <div class="profile"> Username </div>
     </nav>
-   <section class="hero">
+   <section class="hero" id="home">
     <div class="hero-left">
         <h1>
             Revitalize Your Clothes <br>
@@ -36,6 +36,109 @@
         <img src="images/washingmachine.png" alt="Laundry Machine">
     </div>
 </section>
+    <div class="ribbion">
+   <h2>Our Achievements </h2>
+   <div class="ribbion-data-main">
+   <div class="ribbion-data"><h3>15+</h3>
+    <div>laundary Services</div>
+   </div>
+   <div class="ribbion-data"><h3>240+</h3>
+    <div>Happy Customers</div>
+   </div>
+   <div class="ribbion-data"><h3>2+ Years</h3>
+    <div>Experience</div>
+   </div>
+   </div>
+</div>
+  <div class="hero-section">
+   <div class="left" id="services">
+      <div class="left-heading">Our Service</div>
+      <div class="para-bottom">
+         Click On The Add To Cart Button To Add The Services To Your Cart
+      </div>
+ <div class="bottom-services">
+         <div class="service"><div class="service-left"><img src="images/dryCleaning.png" alt="">Dry Cleaning</div><span class="amount">₹200.00</span><button class="additemBtn">Add Item <div id="itemImg" class="plus"><img src="images/add.png" style="width: 22px;" salt=""></div></button></div>
+         <div class="service"><div class="service-left"><img src="images/washfold.png" alt="">Wash & Fold</div><span class="amount">₹100.00</span><button class="additemBtn">Add Item <div id="itemImg" class="plus"><img src="images/add.png" style="width: 22px;" salt=""></div></button></div>
+         <div class="service"><div class="service-left"><img src="images/iron.png" alt="">Ironing</div><span class="amount">₹30.00</span><button class="additemBtn">Add Item <div id="itemImg" class="plus"><img src="images/add.png" style="width: 22px;" salt=""></div></button></div>
+         <div class="service"><div class="service-left"><img src="images/stain-remover.png" alt="">Stain Removal</div><span class="amount">₹500.00</span><button class="additemBtn">Add Item <div id="itemImg" class="plus"><img src="images/add.png" style="width: 22px;" salt=""></div></button></div>
+         <div class="service"><div class="service-left"><img src="images/leather.png" alt="">Leather & Suede Cleaning</div><span class="amount">₹999.00</span><button class="additemBtn">Add Item <div id="itemImg" class="plus"><img src="images/add.png" style="width: 22px;" salt=""></div></button></div>
+         <div class="service"><div class="service-left"><img src="images/wedding.png" alt="">Wedding Dress Cleaning</div><span class="amount">₹2800.00</span><button class="additemBtn">Add Item <div id="itemImg" class="plus"><img src="images/add.png" style="width: 22px;" salt=""></div></button></div>
 
+</div>
+</div>
+   <div class="right">
+  <div class="right-first">
+
+    <div class="right-heading">Added Items</div>
+    
+    <table class="data-table">
+      
+      <thead>
+        <tr>
+          <th>S.no.</th>
+          <th>Service Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      
+      <tbody class="tableAdd">
+      </tbody>
+    </table>
+    <div class="info" id="infoMessage" >
+      <img src="images/info.png" alt="">
+      <h4>No Items Added</h4>
+      <p>Add item to the cart from the services bar</p>
+    </div>
+    <div class="totalamount">
+        <h3>Total Amount </h3>
+        <p>₹0</p>
+    </div>
+
+</div>
+
+
+  <div class="right-second">
+    <div class="book-now-Sec">
+      <h4>Book now</h4>
+      <form action="" class="formDetail"  onsubmit="openPopup(); return false;">
+        <div class="fill-formFull">
+          <label for="name">Full Name</label>
+          <input type="text" placeholder="Enter Your full name" >
+        </div>
+
+        <div class="fill-form">
+          <label>Email</label>
+          <input type="email" placeholder="xyz@gmail.com">
+        </div>
+
+        <div class="fill-form">
+          <label>Phone No.</label>
+          <input type="tel" placeholder="00-000-000-00" >
+        </div>
+
+        <div class="fill-formFull" id="bookbtn">
+          <button onclick="openPopup()">Book now</button>
+          <!-- popup panel -->
+          <div class="popup-container" id="popup">
+    <div class="popup-box">
+        <div class="success-icon">
+            ✓
+        </div>
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted. Thanks!</p>
+
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+   <script src="script.js">
+  
+   </script>
 </body>
 </html>
